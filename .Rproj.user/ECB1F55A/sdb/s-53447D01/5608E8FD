@@ -1,0 +1,18 @@
+{
+    "contents" : "library(shiny)\n\n\nshinyServer(\n  function(input, output){\n    output$selYear<-renderText(input$year)\n    output$selStates<-renderText(input$states)\n    output$selCat<- renderText(input$catGroup)\n    output$thisPlot <- renderPlot(userPlot(input$states, input$year, input$catGroup))\n    output$natPlot<- renderPlot(natlComPlot(input$year, input$catGroup))\n    output$overPlot<- renderPlot(overviewPlot)\n    output$timePlot<- renderPlot(overTime)\n    output$popPlot<- renderPlot(popMap(input$sYear))\n    output$stackPlot<-renderPlot(stacked(input$sYear,input$withPop, input$checkGroup))\n    \n    #ouput$threeD<-renderWebGL(td)\n  }\n)",
+    "created" : 1439688218103.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4064053505",
+    "id" : "5608E8FD",
+    "lastKnownWriteTime" : 1439572537,
+    "path" : "~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/server.r",
+    "project_path" : "server.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

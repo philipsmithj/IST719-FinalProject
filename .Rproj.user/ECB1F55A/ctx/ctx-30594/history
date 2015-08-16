@@ -1,0 +1,512 @@
+temp+geom_smooth(aes(group=state))
+temp+geom_smooth(aes(group=State))
+temp+geom_smooth(aes(group=Description, color=State))
+temp+geom_smooth(aes(group=Description, color=Description))
+temp+geom_line(aes(group=Description, color=Description))
+temp+geom_line(aes(group=Description))
+temp+geom_line(aes(color=Description))
+temp+geom_line(aes(color=Description, group=1))
+temp+geom_line(aes(stat_bin()))
+temp+geom_line(aes(stat_bin(Description)))
+temp+geom_hex()
+temp+geom_hex(fill=Description)
+temp+geom_hex(aes(fill=Description)
+)
+temp+geom_hex(aes(fill=Description, alpha=1/20))
+temp+geom_hex(aes(fill=Description, alpha=(1/20)))
+temp+geom_hex(aes(fill=Description, alpha=I(1/20)))
+temp+geom_hex(aes(fill=Description, alpha=Population
+)
+?geom_hex
+temp+geom_hex(aes(fill=Description, stat="identity))"
+)
+exit
+temp+geom_hex(aes(fill=Description, stat="identity"))
+temp+geom_point(aes(fill=Description, stat="identity"))
+temp+geom_point(aes(color=Description, stat="identity"))
+temp+geom_point(aes(color=Description, alpha=I(1/5)))
+temp+geom_point(aes(alpha=I(1/5)))
+temp+geom_point(aes(color=Description))
+temp+geom_point(aes(color=Description), alpha=I(1/5))
+temp+geom_jitter(aes(color=Description), alpha=I(1/5))
+temp+geom_jitter(aes(color=State), alpha=I(1/5))
+temp+geom_point(aes(color=Description, shape=State))
+temp+geom_jitter(aes(color=Description, shape=State))
+temp+geom_jitter(aes(color=Description, shape=State), alpha=I(1/5))
+View(taxes)
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+temp+geom_line(position="identity")
+temp<-ggplot(taxes,aes(Year,Revenue/Population))
+temp+geom_line(position="identity")
+temp+geom_line(group=State, position="identity")
+temp+geom_line(aes(group=State), position="identity")
+temp+geom_line(aes(group=State, color=State), position="identity")
+temp+geom_point(aes(group=State, color=State), position="identity")
+temp+geom_jitter(aes(group=State, color=State), position="identity")
+temp+geom_bar(aes(group=State, color=State), position=dodge)
+temp+geom_bar(aes(group=State, color=State), position="dodge")
+temp<ggplot(taxes)
+temp<-ggplot(taxes)
+geom_bar(position="dodge", aes(Year))
+temp+geom_bar(position="dodge", aes(Year))
+temp+geom_bar(position="dodge", aes(as.factor(Year)))
+temp+geom_bar(position="dodge",stat="identity",aes(as.factor(Year)))
+temp+geom_bar(position="dodge",stat="identity",aes(as.factor(Year),Revenue))
+temp+geom_bar(position="dodge",stat="identity",color=Description,aes(as.factor(Year),Revenue))
+temp+geom_bar(position="dodge",stat="identity",aes(as.factor(Year),Revenue,color=Description))
+temp+geom_bar(position="dodge",stat="identity",aes(as.factor(Year),Revenue,fill=Description))
+temp+geom_bar(position="dodge",stat="identity",aes(as.factor(Year),Revenue,fill=State))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue,fill=State))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue,fill=State), alpha=I(1/50))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue,fill=State), alpha=I(1/5))
+temp+geom_bar(position="fill",stat="identity",aes(as.factor(Year),Revenue,fill=State), alpha=I(1/5))
+temp+geom_bar(position="fill",stat="identity",aes(as.factor(Year),Revenue/Population), alpha=I(1/5))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue/Population), alpha=I(1/5))
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+k<-subset(taxes,State==c("MO","CO"))
+View(k)
+k<-subset(k,Category==c("T01","T10","T09"))
+View(k)
+temp<-ggplot(k)
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue/Population), alpha=I(1/5))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description), alpha=I(1/5))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description, color=State), alpha=I(1/5))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description, color=State, size=Population), alpha=I(1/5))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description, color=State, size=Revenue/Population), alpha=I(1/5))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description, color=State, width=Population), alpha=I(1/5))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description, color=State, width=Revenue/Population), alpha=I(1/5))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description, color=State, width=Revenue/Population, size=2), alpha=I(1/5))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description, color=State, width=Revenue/Population, size=1), alpha=I(1/5))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description, color=State, width=Revenue/Population, size=.5), alpha=I(1/5))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description, color=State, width=Revenue/Population, size=.3), alpha=I(1/5))
+temp+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description, color=State, width=Revenue/Population,), alpha=I(1/5))
+temp+geom_bar(position="dodge",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description, color=State, width=Revenue/Population), alpha=I(1/5))
+temp+geom_bar(position="dodge",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description, color=State, width=Revenue/Population), alpha=Unemployment
+)
+temp+geom_bar(position="dodge",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description, color=State, width=Revenue/Population), alpha=taxes$Unemployment
+)
+temp+geom_bar(position="dodge",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description), alpha=taxes$Unemployment
+)
+temp+geom_bar(position="dodge",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description), alpha=I(taxes$Unemployment))
+temp+geom_bar(position="dodge",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description))
+temp+geom_bar(position="stack",stat="identity",aes(as.factor(Year),Revenue/Population, fill=Description))
+temp+geom_bar(position="stack",stat="identity",aes(as.factor(Year),Revenue/Population, color=Description))
+temp+geom_bar(position="stack",stat="identity",aes(as.factor(Year),Revenue/Population, color=Description, fill=State))
+temp+geom_bar(position="stack",stat="identity",aes(as.factor(Year),Revenue/Population, color=Description, fill=State),alpha=I(1/count(State)))
+temp+geom_bar(position="stack",stat="identity",aes(as.factor(Year),Revenue/Population, color=Description, fill=State),alpha=I(1/count(k$State)))
+temp+geom_bar(position="stack",stat="identity",aes(as.factor(Year),Revenue/Population, color=Description, fill=State),alpha=I(1/(count(k$State))))
+temp+geom_bar(position="stack",stat="identity",aes(as.factor(Year),Revenue/Population, color=Description, fill=State),alpha=I(1/2))
+temp+geom_bar(position="dodge",stat="identity",aes(as.factor(Year),Revenue/Population, color=Description, fill=State),alpha=I(1/2))
+temp+geom_bar(position="dodge",stat="identity",aes(as.factor(Year),Revenue/Population, color=Description, fill=State,width=State),alpha=I(1/2))
+temp+geom_bar(stat="identity",aes(as.factor(Year),Revenue/Population, color=Description, fill=State,width=State),alpha=I(1/2))
+temp+geom_bar(stat="identity",aes(as.factor(Year),Revenue/Population, color=Description,width=State),alpha=I(1/2))
+temp+geom_bar(position="fill",stat="identity",aes(as.factor(Year),Revenue/Population, color=Description,width=State),alpha=I(1/2))
+temp+geom_bar(position="fill",stat="identity",aes(as.factor(Year),Revenue/Population, color=Description,width=State),alpha=I(1\2))
+temp+geom_bar(position="fill",stat="identity",aes(as.factor(Year),Revenue/Population, color=Description,width=State))
+temp+geom_bar(position="fill",stat="identity",aes(as.factor(Year),Revenue, color=Description,width=State))
+temp+geom_bar(position="fill",stat="identity",aes(x=as.factor(Year),y=Revenue, color=Description,width=State))
+temp+geom_bar(position="fill",stat="identity",aes(x=as.factor(Year),y=Revenue, color=Description))
+temp+geom_bar(position="fill",stat="identity",aes(x=as.factor(Year),y=Revenue, fill=Description))
+?pie
+pie(taxes$Revenue)
+pie(taxes$State)
+pie(taxes$Unemployment)
+pie(k$Unemployment)
+?pie
+pie(k$Unemployment, radius=1/k$Population)
+pie(k$Unemployment, radius=kPopulation)
+pie(k$Unemployment, radius=k$Population)
+?coord_polar
+temp+coord_polar()
+temp+coord_polar(aes(Year, Revenue))
+temp+coord_polar(c(Year, Revenue))
+temp+coord_polar(c(k$Year, k$Revenue))
+?coord_polar
+temp+coord_polar(Year)
+temp+coord_polar(Year,c(Revenue,Population))
+temp+coord_polar(Year,c("Revenue","Population"))
+temp+geom_bar(position="fill",stat="identity",aes(x=as.factor(Year),y=Revenue, fill=Description))
+temp+geom_bar(position="dodge",stat="identity",aes(x=as.factor(Year),y=Revenue, fill=Description))
+temp2<-temp+geom_bar(position="dodge",stat="identity",aes(x=as.factor(Year),y=Revenue, fill=Description))
+temp2+coord_polar(theta="x")
+temp2<-temp+geom_bar(position="stack",stat="identity",aes(x=as.factor(Year),y=Revenue, fill=Description))
+temp2+coord_polar(theta="x")
+temp2+coord_polar(theta="y")
+temp2<-temp+geom_bar(position="jitter",stat="identity",aes(x=as.factor(Year),y=Revenue, fill=Description))
+temp2+coord_polar(theta="y")
+temp2<-temp+geom_bar(position="jitter",stat="identity",aes(x=as.factor(Year),y=Revenue, fill=Description),alpha=I(1/2)))
+temp2<-temp+geom_bar(position="jitter",stat="identity",aes(x=as.factor(Year),y=Revenue, fill=Description),alpha=I(1/2))
+temp2+coord_polar(theta="y")
+temp2<-temp+geom_bar(position="jitter",stat="identity",aes(x=State,y=Revenue, fill=Description),alpha=I(1/2))
+temp2+coord_polar(theta="y")
+temp2+coord_polar(theta="x")
+temp2+coord_polar(theta=c("x","y"))
+temp2+coord_polar(theta="fill")
+temp2<-temp+geom_bar(position="stack",stat="identity",aes(x=State,y=Revenue, fill=Description),alpha=I(1/2))
+temp2+coord_polar(theta="fill")
+temp2+coord_polar(theta="y")
+temp2+coord_polar(theta="x")
+temp2<-temp+geom_bar(position="fill",stat="identity",aes(x=State,y=Revenue, fill=Description),alpha=I(1/2))
+temp2+coord_polar(theta="x")
+temp2<-temp+geom_bar(position="dodge",stat="identity",aes(x=State,y=Revenue, fill=Description),alpha=I(1/2))
+temp2+coord_polar(theta="x")
+temp2<-temp+geom_bar(position="identity",stat="identity",aes(x=State,y=Revenue, fill=Description),alpha=I(1/2))
+temp2+coord_polar(theta="x")
+temp2<-temp+geom_bar(position="stack",stat="identity",aes(x=State,y=Revenue, fill=Description),alpha=I(1/2))
+temp2+coord_polar(theta="x")
+temp+coord_polar()
+temp
+View(temp)
+temp<-ggplot(k)
+temp2<-geom_point()
+temp2
+temp2<-geom_point(aes(Year,Revenue))
+temp2
+temp2<-temp+ geom_point(aes(Year,Revenue))
+temp2
+temp2<-temp+ geom_point(aes(Year,Revenue,color=State))
+temp2
+temp2<-temp+ geom_point(aes(as.factor(Year),Revenue,color=State))
+temp2
+temp2<-temp+ geom_point(aes(as.factor(Year),Revenue,color=Description))
+temp2
+temp2<-temp+ geom_point(aes(x=as.factor(Year),y=Revenue,z=State,color=Description, ))
+temp2<-temp+ geom_point(aes(x=as.factor(Year),y=Revenue,z=State,color=Description))
+temp2
+temp2<-temp+ geom_point(aes(x=as.factor(Year),y=Revenue,color=Description))
+temp2
+temp2+coord_polar(theta="x")
+temp2+coord_polar(theta="y")
+temp2<-temp+geom_bar(position="fill", aes(as.factor(Year),Revenue,fill=Description),alpha=I(1/2))
+temp2+coord_polar(theta="y")
+temp2<-temp+geom_bar(position="fill", stat="identity",aes(as.factor(Year),Revenue,fill=Description),alpha=I(1/2))
+temp2+coord_polar(theta="y")
+temp2<-temp+geom_bar(position="fill", stat="identity",aes(as.factor(Year),Revenue,fill=Description),alpha=I(1/2),facets=State)
+temp2<-temp+geom_bar(position="fill", stat="identity",aes(as.factor(Year),Revenue,fill=Description,facets=State),alpha=I(1/2))
+temp2+coord_polar(theta="y")
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(as.factor(Year),Revenue,fill=Description,facets=State),alpha=I(1/2))
+temp2+coord_polar(theta="y")
+temp2<-temp+geom_bar(position="stack", stat="identity",aes(as.factor(Year),Revenue,fill=Description,facets=State),alpha=I(1/2))
+temp2+coord_polar(theta="y")
+temp2<-temp+geom_bar(position="fill", stat="identity",aes(as.factor(Year),Revenue,fill=Description),alpha=I(1/2))
+temp2+coord_polar(theta="y")+facet_grid(.~k$State)
+temp2+coord_polar(theta="y")+facet_grid(k$State)
+temp2+coord_polar(theta="y")+facet_grid(k$State~.)
+temp2+coord_polar(theta="y")
+temp2+coord_polar(theta="y",radius=.5)
+temp2+coord_polar(theta="y",radius=0.5)
+?coord_polar
+temp2+coord_polar(theta="y", direction=.5)
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+temp2<-temp+geom_bar(position="fill", stat="identity",aes(as.factor(Year),Revenue,fill=Description, group=State),alpha=I(1/2))
+temp2+coord_polar(theta="y")
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(as.factor(Year),Revenue,fill=Description, group=State),alpha=I(1/2))
+temp2+coord_polar(theta="y")
+temp2
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(as.factor(Year),Revenue,fill=Description,color=State),alpha=I(1/2))
+temp2+coord_polar(theta="y")
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(as.factor(Year),Revenue,fill=Description,color=State,size=.25),alpha=I(1/2))
+temp2+coord_polar(theta="y")
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(as.factor(Year),Revenue,fill=Description,color=State,size=Unemployment),alpha=I(1/2))
+temp2+coord_polar(theta="y")
+temp2
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(as.factor(Year),Revenue,fill=Description,color=State,size=0.1),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(as.factor(Year),Revenue,fill=Description,color=State,size=0.01),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(as.factor(Year),Revenue,fill=Description,color=State,size=State),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(as.factor(Year),Revenue,fill=Description,size=State),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(as.factor(Year),Revenue,fill=Description,width=Unemployment),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="stack", stat="identity",aes(as.factor(Year),Revenue,fill=Description,width=Unemployment),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="jitter", stat="identity",aes(as.factor(Year),Revenue,fill=Description,width=Unemployment),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="fill", stat="identity",aes(as.factor(Year),State,fill=Description,width=Revenue),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="fill", stat="identity",aes(State,Year,fill=Description,width=Revenue),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="stack", stat="identity",aes(State,Year,fill=Description,width=Revenue),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="stack", stat="identity",aes(Year,State,fill=Description,width=Revenue),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(Year,State,fill=Description,width=Revenue),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(as.factor(Year),State,fill=Description,width=Revenue),alpha=I(1/2))
+temp2
+temp2+coord_polar()
+temp2+coord_polar(theta='y')
+temp2
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(as.factor(Year),group=State,fill=Description,width=Revenue),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(x=as.factor(Year),y=State,group=State,fill=Description,width=Revenue),alpha=I(1/2))
+temp2
+temp2+coord_polar
+temp2+coord_polar()
+temp2+coord_polar(theta='y')
+temp2
+temp2<-temp+geom_bar(position="fill", stat="identity",aes(x=as.factor(Year),y=State,group=State,fill=Description,width=Revenue),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(x=as.factor(Year),y=State,group=State,fill=Description,width=Revenue),alpha=I(1/2))
+temp2
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(x=as.factor(Year),y=State,group=State,fill=Description),alpha=I(1/2))
+temp2
+temp2<-temp+geom_hbar(position="dodge", stat="identity",aes(x=as.factor(Year),y=State,group=State,fill=Description),alpha=I(1/2))
+temp2<-temp+geom_hex(position="dodge", stat="identity",aes(x=as.factor(Year),y=State,group=State,fill=Description),alpha=I(1/2))
+temp2
+temp2<-temp+geom_hex(position="dodge", stat="identity",aes(x=as.factor(Year),y=Revenue,group=State,fill=Description),alpha=I(1/2))
+temp2
+temp2<-temp+geom_hex(position="dodge", stat="identity",aes(x=as.factor(Year),y=Revenue,fill=Description),alpha=I(1/2))
+temp2
+temp2<-temp+geom_hex(position="stack", stat="identity",aes(x=as.factor(Year),y=Revenue,fill=Description),alpha=I(1/2))
+temp2
+temp2<-temp+geom_hex(position="fill", stat="identity",aes(x=as.factor(Year),y=Revenue,fill=Description),alpha=I(1/2))
+temp2
+temp2<-temp+geom_hex(position="fill", stat="identity",aes(x=as.factor(Year),y=Revenue,fill=Description,ymax=max(Revenue)),alpha=I(1/2))
+temp2
+temp2<-temp+geom_hex(position="fill", stat="identity",aes(x=as.factor(Year),y=Revenue,fill=Description,ymin=min(Revenue),ymax=max(Revenue)),alpha=I(1/2))
+temp2
+temp2<-temp+geom_hex(position="stack", stat="identity",aes(x=as.factor(Year),y=Revenue,fill=Description,ymin=min(Revenue),ymax=max(Revenue)),alpha=I(1/2))
+temp2
+temp2<-temp+geom_hex(position="dodge", stat="identity",aes(x=as.factor(Year),y=Revenue,fill=Description,ymin=min(Revenue),ymax=max(Revenue)),alpha=I(1/2))
+temp2
+temp2<-temp+geom_hex(position="dodge", stat="identity",aes(x=as.factor(Year),y=State,fill=Description,size=Description),alpha=I(1/2))
+temp2
+temp2<-temp+geom_hex(position="dodge", stat="identity",aes(x=as.factor(Year),y=State,fill=Description),alpha=I(1/2))
+temp2
+temp2<-temp+geom_hex(position="dodge", stat="identity",aes(x=as.factor(Year),y=State,fill=Description)
+)
+temp2
+temp2<-temp+geom_hex(position="dodge", stat="identity",aes(x=as.factor(Year),y=Year,fill=Description)
+)
+temp2<-temp+geom_hex(position="dodge", stat="identity",aes(x=as.factor(Year),y=Year,fill=Description))
+temp2
+temp2<-temp+geom_hex(position="dodge", stat="identity",aes(x=as.factor(Year),y=as.factor(Year),fill=Description))
+temp2
+temp2<-temp+geom_hex(position="dodge", stat="identity",aes(x=as.factor(Year),y=as.factor(Year)))
+temp2
+temp2<-temp+geom_hex(position="dodge", stat="identity",aes(x=as.factor(Year),y=as.factor(Year),color=State))
+temp2
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(x=as.factor(Year),y=as.factor(Year),color=State))
+temp2
+temp2<-temp+geom_bar(position="dodge", stat="identity",aes(x=as.factor(Year),y=as.factor(Year)))
+temp2
+temp2<-temp+geom_bar(position="stack", stat="identity",aes(x=as.factor(Year),y=as.factor(Year)))
+temp2
+temp2<-temp+geom_bar(position="stack", stat="identity",aes(x=as.factor(Year),Revenue)))
+temp2<-temp+geom_bar(position="stack", stat="identity", aes(as.factor(Year), as.factor(Year),width=Revenue))
+temp2
+temp2<-temp+geom_bar(position="stack", stat="identity", aes(as.factor(Year), State,width=Revenue))
+temp2
+temp2<-temp+geom_bar(position="stack", stat="identity", aes(State,as.factor(Year),width=Revenue))
+temp2
+temp2<-temp+geom_bar(position="stack", stat="identity", aes(as.factor(Year),width=Revenue))
+temp2
+temp2<-temp+geom_bar(position="fill", stat="identity", aes(as.factor(Year),Revenue,width=Revenue))
+temp2
+temp2<-temp+geom_bar(position="fill", stat="identity", aes(as.factor(Year),Revenue,width=Revenue,fill=Description))
+temp2
+temp2<-temp+geom_bar(position=c("fill","stack"), stat="identity", aes(as.factor(Year),width=Revenue,fill=Description))
+temp2
+temp2<-temp+geom_bar(position=c("fill","stack"), stat="identity", aes(as.factor(Year),1,width=Revenue,fill=Description))
+temp2
+temp2<-temp+geom_bar(position="stack", stat="identity", aes(as.factor(Year),1,width=Revenue,fill=Description))
+temp2
+temp2<-temp+geom_bar(position="stack", stat="identity", aes(as.factor(Year),1,fill=Description))
+temp2
+temp2<-temp+geom_bar(position="stack", stat="identity", aes(as.factor(Year),fill=Description))
+temp2
+temp2<-temp+geom_bar(position=c("dodge","fill"), stat="identity", aes(as.factor(Year),Revenue,fill=Description))
+temp2
+temp2<-temp+geom_bar(position=c("dodge"), stat="identity", aes(as.factor(Year),Revenue,fill=Description))
+temp2
+temp2+facet_wrap(~.State)
+temp2+facet_wrap(~.k$State)
+temp2<-temp+geom_bar(position=c("dodge"), stat="identity", aes(as.factor(Year),Revenue,fill=Description,facets=State))
+temp2
+temp2<-temp+geom_bar(position=c("dodge"), stat="identity", aes(as.factor(Year),Revenue,fill=Description,facet=State))
+temp2
+temp2+facet_grid(.~State)
+temp3<-temp2+facet_grid(.~State)
+temp3+coord_polar()
+temp3+coord_polar(theta='y')
+temp2
+temp3
+temp2<-temp+geom_bar(position=c("stack"), stat="identity", aes(as.factor(Year),Revenue,fill=Description,facet=State))
+temp2
+..total..
+sum
+avg
+men
+mean()
+temp2+facet_grid(~.State)
+temp2<-temp+geom_bar(position=c("stack"), stat="identity", aes(as.factor(Year),Revenue/sum(Revenue),fill=Description,facet=State))
+temp2+facet_grid(~.State)
+temp2
+temp2<-temp+geom_bar(position=c("stack"), stat="identity", aes(as.factor(Year),Revenue,fill=State,))
+temp2
+temp2<-temp+geom_bar(position=c("stack"), stat="identity", aes(as.factor(Year),Revenue,fill=State))
+temp2
+temp2<-temp+geom_bar(position=c("stack"), stat="identity", aes(as.factor(Year),Revenue,fill=State))+facet_grid(.~Description)
+temp2
+temp2<-temp+geom_bar(position=c("stack"), stat="identity", aes(as.factor(Year),Revenue/sum(k$Revenue),fill=State))+facet_grid(.~Description)
+temp2
+k$Revenue[1]/k$Revenue
+sum(Revenue)
+sum(k$Revenue)
+View(k)
+a<-subset(k,Category=="T10")
+View(a)
+a1<-subet(k,Year==2006)
+a1<-subset(k,Year==2006)
+View(a1)
+sum(a1$Revenue)
+ap<-ggplot(a1)
+ap+geom_bar(position(stack),stat="identity", aes(as.factor(Year),Revenue))
+ap<-ggplot(data=a1)
+ap+geom_bar(position(stack),stat="identity", aes(as.factor(Year),Revenue))
+ap+geom_bar(position="stack",stat="identity", aes(as.factor(Year),Revenue))
+ap+geom_bar(position="stack",stat="identity", aes(as.factor(Year),Revenue,fill=State))
+K+geom_bar(position="stack",stat="identity", aes(as.factor(Year),Revenue,fill=State))
+k+geom_bar(position="stack",stat="identity", aes(as.factor(Year),Revenue,fill=State))
+temp2+geom_bar(position="stack",stat="identity", aes(as.factor(Year),Revenue,fill=State))
+temp+geom_bar(position="stack",stat="identity", aes(as.factor(Year),Revenue,fill=State))
+percent
+temp+geom_bar(position="stack",stat="identity", aes(as.factor(Year),Revenue/k$Revenue,fill=State))
+temp+geom_bar(position="stack",stat="identity", aes(as.factor(Year),Revenue/sum(k$Revenue),fill=State))
+temp+geom_bar(position="stack",stat="identity", aes(as.factor(Year),Revenue/k$Revenue,fill=State))
+temp+geom_bar(position="stack",stat="identity", aes(as.factor(Year),k$Revenue/Revenue,fill=State))
+pie(k$Revenue)
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+temp<-ggplot(taxes)
+?gemo_tile
+?geom_tile
+temp2+geom_tile(color="white")
+temp2<-temp+geom_tile(color="white")
+temp2<-temp+geom_tile(color="white", aes(as.factor(Year),Description))
+temp2
+temp2<-temp+geom_tile(color="white", aes(as.factor(Year),Description,color=Revenue))
+temp2
+temp2<-temp+geom_tile(color="white", aes(as.factor(Year),Description,fill=Revenue))
+temp2
+temp2+coord_polar()
+temp2+coord_polar(theta='y')
+temp2<-temp+geom_tile(color="white", aes(as.factor(Year),Description,fill=Revenue/taxes$Revenue))
+temp2
+temp2<-temp+geom_tile(aes(as.factor(Year),Description,fill=Revenue,color=State))
+temp2
+temp+geom_tile(position="dodge",aes(as.factor(Year),Description,fill=Revenue,color=State))
+temp+geom_tile(aes(Year,Revenue))+facet_grid(Description~.)
+temp+geom_tile(aes(Year,Revenue))+facet_grid(Description~State)
+k<-subet(taxes,State==c("MO","CO")
+)
+k<-subset(taxes,State==c("MO","CO"))
+k+geom_tile(position="dodge", aes(as.factor(Year),Description, fill=Revenue))+facet_grid(Description~State)
+ggplot(k)+geom_tile(aes(Year,Revenue))+facet_grid(Description~State)
+ggplot(k)+geom_tile(aes(Year,Revenue))+facet_grid(State~Description)
+k<-subset(k,Category==c("T10","T09"))
+ggplot(k)+geom_tile(aes(Year,Revenue))+facet_grid(State~Description)
+ggplot(k)+geom_tile(aes(Year,Revenue,fill=Revenue))+facet_grid(State~Description)
+ggplot(k)+geom_tile(aes(Year,Revenue))+facet_grid(State~Description)
+ggplot(k)+geom_tile(aes(Year,Revenue))
+ggplot(k)+geom_tile(aes(Year,Revenue,fill=State))
+ggplot(k)+geom_tile(aes(as.factor(Year),Revenue,fill=State))
+View(k)
+ggplot(k)+geom_point(aes(as.factor(Year),Revenue,fill=State))
+ggplot(k)+geom_point(aes(as.factor(Year),Revenue,color=State))
+ggplot(k)+geom_jitter(aes(as.factor(Year),Revenue,color=State))
+ggplot(k)+geom_bar(position="jitter",aes(as.factor(Year),Revenue,color=State))
+ggplot(k)+geom_bar(position="jitter",stat="identity",aes(as.factor(Year),Revenue,color=State))
+ggplot(k)+geom_bar(position="stack",stat="identity",aes(as.factor(Year),Revenue,color=State))
+ggplot(k)+geom_bar(position="stack",stat="identity",aes(as.factor(Year),Revenue,fill=State))
+ggplot(k)+geom_bar(position="stack",stat="identity",aes(as.factor(Year),Revenue,fill=State))+facet_grid(.~Category)
+ggplot(k)+geom_bar(position="stack",stat="identity",aes(as.factor(Year),Revenue,fill=State))+facet_grid(.~State)
+ggplot(k)+geom_bar(position="stack",stat="identity",aes(as.factor(Year),Revenue,fill=Description))+facet_grid(.~State)
+ggplot(k)+geom_bar(position="stack",stat="identity",aes(as.factor(Year),Revenue,fill=Description))+facet_grid(.~State)+coord_polar(theta='y')
+?sum
+sum(taxes$Revenue[match(taxes$Year,2014)])
+sum(taxes$Revenue[match(taxes$Year,"2014")])
+sum(taxes$Revenue[match(taxes$Category,"T10")])
+match(taxes$Category,"T10")
+match(taxes$Category,unique(taxes$Category))
+match(taxes$Year,2010))
+match(taxes$Year,"2010")
+if(match(taxes$Year,"2010")){}
+if(match(taxes$Year,"2010")){
+sum(taxes$Revenue)}
+if(!is.na(match(taxes$Year,"2010"))){
+exit
+temp<-ggplot(taxes)
+temp+geom_tile(aes(as.factor(Year),Description))
+temp+geom_tile(aes(as.factor(Year),Description, fill=State))
+temp+geom_tile(aes(as.factor(Year),Description, fill=Revenue))
+temp+geom_tile(aes(as.factor(Year),Description, fill=Revenue/State))
+temp+geom_tile(aes(as.factor(Year),Description, fill=Population))
+temp+geom_tile(color='white',aes(as.factor(Year),Description, fill=Population))
+temp+geom_tile(color='white',aes(as.factor(Year),Description, fill=Revenue))+facet_grid(.~State)
+temp+geom_tile(color='white',aes(as.factor(Year),Description, fill=Revenue))+facet_grid(.~State=="MO")
+temp+geom_tile(color='white',aes(as.factor(Year),Description, fill=Revenue))+facet_grid(.~State==c("MO","CO"))
+temp+geom_tile(color='white',aes(as.factor(Year),Description, fill=Revenue, color=State))+facet_grid()
+temp+geom_tile(color='white',aes(as.factor(Year),Description, fill=Revenue, color=State))
+temp+geom_tile(color='white',aes(as.factor(Year),State, fill=Revenue))
+temp+geom_tile(color='white',aes(as.factor(Year),State, fill=Revenue))+facet_grid(.~Description)
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+install.packages("ggplot2")
+install.packages("reshape2")
+install.packages("ggplot2")
+install.packages("reshape2")
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+install.packages("ggplot2")
+install.packages("reshape2")
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
+install.packages("reshape2")
+install.packages("plyr")
+shiny::runApp()
+source('~/Syracuse/IST719 - Info Visualization/Final Project Programming/Final R processing/ui.R', encoding = 'UTF-8')
